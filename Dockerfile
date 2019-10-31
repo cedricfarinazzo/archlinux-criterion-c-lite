@@ -6,7 +6,7 @@ RUN pacman --noconfirm -Syyu
 
 RUN pacman --noconfirm -S wget curl sudo fakeroot file patch
 RUN pacman --noconfirm -S git make gcc clang cmake 
-RUN pacman --noconfirm -S valgrind doxygen
+RUN pacman --noconfirm -S valgrind
 
 # Add user, group sudo
 RUN /usr/sbin/groupadd --system sudo && \
