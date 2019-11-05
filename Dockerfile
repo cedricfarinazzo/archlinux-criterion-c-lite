@@ -5,8 +5,9 @@ LABEL authors="Cédric Farinazzo <cedrc.farinazzo@gmail.com>"
 RUN pacman --noconfirm -Syyu
 
 RUN pacman --noconfirm -S wget curl sudo fakeroot file patch
-RUN pacman --noconfirm -S git make gcc clang cmake 
+RUN pacman --noconfirm -S git make gcc clang cmake
 RUN pacman --noconfirm -S valgrind
+RUN pacman --noconfirm -S python-pip
 
 # Add user, group sudo
 RUN /usr/sbin/groupadd --system sudo && \
